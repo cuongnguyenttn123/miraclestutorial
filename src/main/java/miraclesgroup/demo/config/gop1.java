@@ -6,4 +6,5 @@ public class gop1 {
             cdf
             dcb
                     mkn
+    abc
 }
