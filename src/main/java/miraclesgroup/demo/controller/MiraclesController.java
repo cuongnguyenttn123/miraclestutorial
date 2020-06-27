@@ -42,21 +42,8 @@ public class MiraclesController {
     }
 
     @GetMapping("/employee2")
-    public List<Employee> findAllEmployee2(){
+    public List<Employee> findAllEmployee2() {
         return employeeRepository.findAll();
-<<<<<<< HEAD
-=======
-    }
-
-    @GetMapping("/employee3")
-    public List<Employee> findAllEmployee3(){
-        return employeeRepository.findAll();
-    }
-
-    @GetMapping("/employee4")
-    public List<Employee> findAllEmployee4(){
-        return employeeRepository.findAll();
->>>>>>> 80bcb0dc45cd742dab10100770430216f0ef530d
     }
 
 }
