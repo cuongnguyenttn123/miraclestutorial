@@ -7,4 +7,5 @@ public class gop1 {
             dcb
                     mkn
     abc
+    abc
 }
