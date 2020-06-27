@@ -30,6 +30,7 @@ public class MiraclesController {
         return miraclesService.findAll();
     }
 
+
     @GetMapping("/company")
     public List<Company> findAllCompany(){
         return companyRepository.findAll();
@@ -37,6 +38,11 @@ public class MiraclesController {
 
     @GetMapping("/employee")
     public List<Employee> findAllEmployee(){
+        return employeeRepository.findAll();
+    }
+
+    @GetMapping("/employee2")
+    public List<Employee> findAllEmployee2(){
         return employeeRepository.findAll();
     }
 }
