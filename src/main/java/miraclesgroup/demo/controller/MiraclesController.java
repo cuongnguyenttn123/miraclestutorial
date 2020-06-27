@@ -51,4 +51,9 @@ public class MiraclesController {
         return employeeRepository.findAll();
     }
 
+    @GetMapping("/employee2")
+    public List<Employee> findAllEmployee2344() {
+        return employeeRepository.findAll();
+    }
+
 }
