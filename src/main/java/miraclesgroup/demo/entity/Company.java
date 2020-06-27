@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Table(name = "company")
 @Data
@@ -21,6 +22,9 @@ public class Company implements Serializable {
 
     @Column(name = "address")
     private String address;
+
+    @OneToMany(mappedBy = "company")
+    List<Employee> employeeList;
 
     
 }

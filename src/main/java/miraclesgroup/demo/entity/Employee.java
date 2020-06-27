@@ -28,8 +28,9 @@ public class Employee implements Serializable {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "companyid")
-    private Integer companyid;
+    @ManyToOne
+    @JoinColumn(name = "companyid")
+    private Company company;
 
     
 }

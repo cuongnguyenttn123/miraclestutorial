@@ -1,6 +1,10 @@
 package miraclesgroup.demo.controller;
 
+import miraclesgroup.demo.entity.Company;
+import miraclesgroup.demo.entity.Employee;
 import miraclesgroup.demo.entity.Miracles;
+import miraclesgroup.demo.repository.CompanyRepository;
+import miraclesgroup.demo.repository.EmployeeRepository;
 import miraclesgroup.demo.service.MiraclesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,8 +19,24 @@ public class MiraclesController {
     @Autowired
     MiraclesService miraclesService;
 
+    @Autowired
+    CompanyRepository companyRepository;
+
+    @Autowired
+    EmployeeRepository employeeRepository;
+
     @GetMapping
     public List<Miracles> findAll(){
         return miraclesService.findAll();
+    }
+
+    @GetMapping("/company")
+    public List<Company> findAllCompany(){
+        return companyRepository.findAll();
+    }
+
+    @GetMapping("/employee")
+    public List<Employee> findAllEmployee(){
+        return employeeRepository.findAll();
     }
 }
