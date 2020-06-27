@@ -8,4 +8,5 @@ public class gop1 {
                     mkn
     abc
     abc
+            abc
 }
